@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_deposit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.augmentis.ayp.atm_model_project.DepositActivity">
+
+    <TextView
+        android:text="Note"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:id="@+id/note_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Amont"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:id="@+id/amont_text"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="100"
+        android:textSize="25sp"
+        android:padding="8dp"
+        android:id="@+id/one_hundred_text"
+        android:layout_below="@+id/note_text"
+        android:layout_toRightOf="@+id/checkbox_one_hundred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="500"
+        android:textSize="25sp"
+        android:padding="8dp"
+        android:id="@+id/five_hundred_text"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/checkbox_five_hundred"
+        android:layout_below="@+id/one_hundred_text"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="1000"
+        android:textSize="25sp"
+        android:id="@+id/one_thousand_text"
+        android:padding="8dp"
+        android:layout_below="@+id/five_hundred_text"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/checkbox_one_thousand"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_text_one_hundred"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/amont_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edit_text_five_hundred"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edit_text_one_hundred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_text_one_thousand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_five_hundred"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:id="@+id/checkbox_one_thousand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_text_one_thousand"
+        android:layout_alignBottom="@+id/edit_text_one_thousand"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/checkbox_one_hundred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_text_one_hundred"
+        android:layout_alignBottom="@+id/edit_text_one_hundred"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:id="@+id/checkbox_five_hundred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_text_five_hundred"
+        android:layout_alignBottom="@+id/edit_text_five_hundred"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
